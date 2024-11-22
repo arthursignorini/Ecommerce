@@ -3,38 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/components/navbar/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-<body>
+<body class="bg-gray-100 font-sans">
+
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
+    <nav class="navbar bg-white shadow-md p-4">
+        <div class="navbar-container flex justify-between items-center">
           <!-- Logo -->
-          <a href="img/logo.png" class="logo">Ecommerce</a>
+          <a href="index.html" class="logo">Ecommerce</a>
   
           <!-- Links -->
-          <ul class="nav-links">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Cadastro</a></li>
+          <ul class="nav-links hidden md:flex space-x-4">
+            <li><a href="#" class="text-gray-700 hover:text-blue-600">Login</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-blue-600">Cadastro</a></li>
           </ul>
 
           <!-- Mobile Menu Button -->
-          <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <button class="mobile-menu-btn md:hidden" id="mobileMenuBtn">
             ☰
           </button>
         </div>
   
         <!-- Mobile Menu -->
-        <ul class="mobile-nav-links" id="mobileNavLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
+        <ul class="mobile-nav-links hidden md:hidden" id="mobileNavLinks">
+          <li><a href="#" class="block text-gray-700 py-2">Home</a></li>
+          <li><a href="#" class="block text-gray-700 py-2">Produtos</a></li>
+          <li><a href="#" class="block text-gray-700 py-2">Sobre</a></li>
+          <li><a href="#" class="block text-gray-700 py-2">Contato</a></li>
         </ul>
-      </nav>
-      <!-- Fim da NavBar -->
+    </nav>
+    <!-- End Navbar -->
 
-    
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <br>
+        <h1>Bem-vindo ao nosso Ecommerce!</h1>
+        <p class="mt-4 text-lg">Explore produtos incríveis com descontos exclusivos.</p>
+        <a href="#produtos" class="mt-6 inline-block bg-white text-blue-500 px-6 py-2 rounded shadow hover:bg-gray-100">
+            Confira nossos produtos
+        </a>
+        
+    </section>
+
+    <!-- Produtos Destaque -->
+    <section id="produtos">
+        <div class="container mx-auto">
+            <h2>Produtos em Destaque</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Produto 1 -->
+                <div class="product bg-gray-100 p-4 rounded shadow">
+                    <img src="assets/img/produto3.png" alt="Produto 1" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Garrafa Térmica de Aço Inoxidável
+                    </h3>
+                    <p class="text-gray-600 mt-2">Garrafa térmica leve e durável em aço inoxidável azul metálico, com tampa à prova de vazamentos. Mantém suas bebidas na temperatura ideal, com um design moderno para levar em qualquer lugar.</p>
+                    <span class="text-blue-500 font-bold mt-4 block">R$ 99,90</span>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+                <!-- Produto 2 -->
+                <div class="product bg-gray-100 p-4 rounded shadow">
+                    <img src="assets/img/produto2.png" alt="Produto 2" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Relógio de Pulso Minimalista</h3>
+                    <p class="text-gray-600 mt-2">Relógio clássico com design minimalista em aço inoxidável e pulseira de couro preto. Combina elegância e precisão, sendo o acessório perfeito para ocasiões formais ou uso diário. Aproveite para aprimorar o seu visual</p>
+                    <span class="text-blue-500 font-bold mt-4 block">R$ 199,90</span>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+                <!-- Produto 3 -->
+                <div class="product bg-gray-100 p-4 rounded shadow">
+                    <img src="assets/img/produto1.png" alt="Produto 3" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Fones de Ouvido Over-Ear</h3>
+                    <p class="text-gray-600 mt-2">Fones de ouvido confortáveis e modernos, com acabamento em branco fosco e detalhes prateados. Perfeitos para uma experiência de áudio imersiva e sofisticada, com isolamento de ruído e excelente qualidade de som.</p>
+                    <span>R$ 299,90</span>
+                    <button class="mt-4 bg-blue-500 text-white">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Ecommerce. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/components/navbar/navbar.js"></script>
 </body>
 </html>

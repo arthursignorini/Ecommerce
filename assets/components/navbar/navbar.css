@@ -9,7 +9,7 @@ body, ul, li, a, button {
   
   /* Navbar */
   .navbar {
-    background: linear-gradient(45deg, #4a90e2, #50b5a9);
+    background: linear-gradient(135deg, #1faab6, #1e6ec3);
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -22,7 +22,7 @@ body, ul, li, a, button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
   }
   
@@ -48,6 +48,7 @@ body, ul, li, a, button {
   
   .nav-links li a {
     font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
     padding: 8px 12px;
     border-radius: 5px;
